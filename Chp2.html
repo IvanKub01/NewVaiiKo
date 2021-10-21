@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>CarBart</title>
+    <link rel="stylesheet" href="Chstyle.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta2/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.7.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta2/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/1ba097df4d.js" crossorigin="anonymous"></script>
+    <script src="Ch1script.js"></script>
+</head>
+
+<body style="position: relative;">
+
+    <div class="loader" hidden></div>
+
+    <nav class=" noPad navbar navbar-expand-lg navbar-light mibablueSky">
+        <button class="navbar-toggler m-2 " style="background-color:#040b9e;border: solid #02065d;" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon m-2" style=" color: #661616 !important;;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="btn btn-sm nav-link mibaBlue m-2 active "
+                        href="D:/VAII/Vypracovanie-20191012T182826Z-001/MyVaii-master/Chp1.html"> CARS </a>
+                </li>
+                <li class="nav-item">
+                    <a id="getRow" class="btn btn-sm nav-link mibaBlue m-2 active"
+                        href="D:/VAII/Vypracovanie-20191012T182826Z-001/MyVaii-master/Chp2.html"> OPENING H </a>
+                </li>
+                <li class="nav-item">
+                    <a id="adding" class=" btn btn-sm nav-link mibaBlue m-2 active"
+                        href="D:/VAII/Vypracovanie-20191012T182826Z-001/MyVaii-master/Chp3.html">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm jj" id="otvHodinID">
+                <table>
+                    <tr>
+                        <th>Sunday</th>
+                        <td>Closed</td>
+                    </tr>
+                    <tr>
+                        <th>Monday</th>
+                        <td>9am - 5pm</td>
+                    </tr>
+                    <tr>
+                        <th>Tuesday</th>
+                        <td>9am - 5pm</td>
+                    </tr>
+                    <tr>
+                        <th>Wednesday</th>
+                        <td>9am - 5pm</td>
+                    </tr>
+                    <tr>
+                        <th>Thursday</th>
+                        <td>9am - 5pm</td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="col-sm jj">
+                <div id="OpHdiv">
+                    <img src="pictures/Clock.gif" alt="Otvaracie hodinzy " id="OpH">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        $(window).bind("load resize scroll", function (e) {
+            var windowWidth = $(window).width();
+            if (windowWidth == 980) {
+                console.log($(window).width())
+
+                $('.jj').addClass("mediaTd");
+
+
+
+            } else {
+
+                console.log("uu")
+
+                $('.jj').removeClass("mediaTd");
+
+
+
+            }
+
+        });
+    </script>
+</body>
+
+</html>
